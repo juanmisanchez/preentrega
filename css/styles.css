@@ -1,0 +1,161 @@
+
+ul{
+   display: flex;
+   justify-content: space-evenly;
+   flex-direction: row;
+   font-family: "daftfont", sans-serif;
+   list-style: none;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+header{
+    background-color: black;
+    position: sticky;
+    top: 0;
+
+ 
+}
+@media (max-width:768px) {
+   header{
+      flex-direction: column;
+   }
+   ul{
+      flex-direction: column;
+      font-size: 5vw;
+   }
+   img{
+      width: 100%;
+   }
+   
+}
+
+
+ body{
+    background-color: black;
+    
+      overflow-x: hidden;
+   
+ }
+   .banner{
+      width: 100vw;
+   }
+ 
+
+ .ramdomaccess{
+    color: white;
+    font-size: 21px;
+    line-height: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 8%;
+    
+ }
+ 
+ div.redes a{
+    list-style-type: none;
+    display: inline ;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 1vh;
+
+
+ }
+ .redes{
+   margin-top: 6%;
+ }
+
+ .logo img {
+    position: relative;
+    width: 60px;
+    float:right;
+    margin-top:0px;
+    margin-bottom:0px;
+ }
+ .biodaft{
+    color: white;
+    font-family: "daftfont", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   
+ }
+ @media (max-width:768px) {
+   .biodaft{
+      flex-direction: column;
+      font-size: x-large;
+   }
+ }
+
+  
+
+ @font-face {
+    font-family:"daftfont" ;
+    src: url(../fonts/daft_font.zip);
+ }
+ .biografia{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-family: "daftfunk", sans-serif;
+ }
+ .dejatumensajebox{
+   display: flex;
+   flex-direction: column;
+
+ }
+ .dejatumensaje{
+    color: white;
+    text-align: left;
+ }
+ .discografia{
+    color: white;
+    text-align: center;
+    font-family: "daftfont", sans-serif;
+    font-size: 35px;
+
+ }
+ .padre{
+    display:flex;
+    gap: 20px;
+ }
+ .padre2{
+    display: flex;
+    gap: 20px;
+ }
+ .tour{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-family: "daftfont", sans-serif;
+ }
+ .tour2{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 1px;
+    font-size: 30px;
+    text-align: left;
+    
+    
+   
+ }
+
+ .quehacemos{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   color: black   ;
+   background-color: white;
+   
+ }
+ .quehacemos p {
+   width: 30%;
+ }
+
+ 
