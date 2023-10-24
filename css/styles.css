@@ -14,15 +14,9 @@ header ul {
   font-family: "daftfont", sans-serif;
   list-style: none;
 }
-header ul li {
-  list-style: none;
-  outline: none;
-  text-decoration: none;
-}
-header ul li a {
+header ul a {
   color: white;
   text-decoration: none;
-  list-style: none;
 }
 
 .logo {
@@ -69,7 +63,7 @@ footer {
   color: white;
 }
 
-.biografia {
+.biografia, .discografia {
   display: flex;
   justify-content: center;
   font-family: "daftfont", sans-serif;
@@ -81,17 +75,25 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
 }
+@media (max-widht: 768px) {
+  .biodaft {
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+  }
+}
 .biodaft p {
   color: white;
   font-family: "daftfont", sans-serif;
   margin-left: 20px;
 }
 
-.discografia {
-  display: flex;
-  justify-content: center;
-  font-family: "daftfont", sans-serif;
-  font-size: 40px;
+.padre div:hover {
+  color: white;
+}
+.padre div:hover :hover {
+  text-decoration: underline;
+  transform: translate(10px, 5px);
 }
 
 .padre {
@@ -122,6 +124,33 @@ footer {
   margin-left: 1px;
   font-size: 30px;
   text-align: left;
+  height: 100%;
+}
+.tour2 div:hover {
+  transform: translate(100px, 3px);
+  color: white;
+}
+.tour2 div:hover :hover {
+  color: grey;
+  text-decoration: underline;
+}
+.tour2 a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  header {
+    display: flex;
+  }
+  header ul {
+    flex-direction: column;
+    font-size: 5vw;
+  }
+  header ul img {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
