@@ -1,0 +1,11 @@
+.dejatumensajebox{
+    display: flex;
+    flex-direction: column;
+    height: 537px;
+    .dejatumensaje{
+        color:$colorTitulos;
+        text-align: left;
+        font-family: $font;
+       
+}
+}

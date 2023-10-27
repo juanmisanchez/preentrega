@@ -1,0 +1,28 @@
+footer{
+    margin: 15px;
+
+}
+.redes{
+    display: inline;
+    a{
+    list-style-type: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 1vh;
+    color: white;
+    }
+}
+
+@include mobile() {
+    footer{
+        margin: 20px;
+        .redes{
+            display: flex;
+            flex-direction: row;
+            a{
+                margin: 3vh;
+                font-size: 35px;
+            }
+        }
+    }
+}

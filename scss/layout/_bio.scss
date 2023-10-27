@@ -1,0 +1,31 @@
+.biografia{
+    display: flex;
+    justify-content: center;
+    font-family: $font;
+    font-size: 40px;
+}
+.biodaft{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+p{
+    color: $colorTextos;
+    font-family: $font;
+    margin-left: 20px;
+    
+}
+
+@include mobile() {
+    
+    .biodaft{
+        flex-direction: column;
+        font-size: x-large;
+        .imagenbio{
+            width: 100%;
+            margin-top: 4vh;
+        }
+    }
+    
+    
+}

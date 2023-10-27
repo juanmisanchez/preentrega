@@ -1,0 +1,37 @@
+.tour{
+    color: $colorTitulos;
+    text-align: center;
+    font-size: 35px;
+    font-family: $font;
+}
+.tour2{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 1px;
+    font-size: 30px;
+    text-align: left;
+    height: 72%;
+
+    div:hover{
+        transform: translate(100px, 3px);
+        color: white;
+    
+    :hover{
+        color: grey;
+        text-decoration: underline;
+       
+       
+    }
+}
+ 
+    
+
+    a{
+        text-decoration: none;
+        list-style: none;
+        color: $colorTextos;
+        
+        }
+    }     
+
+    

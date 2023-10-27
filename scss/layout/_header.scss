@@ -1,0 +1,39 @@
+header{
+    background-color: black;
+    height: 50px;   
+            
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                list-style: none;  
+                
+            
+            a{
+                color: white;
+                text-decoration: none;
+                font-family: $font;
+            }
+        }
+        } 
+
+.logo{
+     position: sticky;
+      width: 60px;
+      float:right;
+  }
+
+  @include mobile() {
+    header{ 
+        height: auto;  
+        ul{
+            flex-direction: column;
+            font-size: x-large;
+            gap: 5px;
+            a{
+                font-size: 35px;
+            }
+            
+        }
+    }
+}

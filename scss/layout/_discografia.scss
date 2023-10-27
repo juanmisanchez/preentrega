@@ -1,0 +1,27 @@
+.discografia{
+    @extend .biografia
+
+}
+.padre{
+    div:hover{
+        
+        color: white;
+    
+    :hover{
+        text-decoration: underline;
+        transform: translate(10px, 5px);
+       
+       
+    }
+}
+ 
+}
+
+.padre{
+    display:flex;
+    gap: 20px;
+}
+
+@include mobile() {
+    
+}

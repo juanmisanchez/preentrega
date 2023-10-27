@@ -11,12 +11,12 @@ header ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  font-family: "daftfont", sans-serif;
   list-style: none;
 }
 header ul a {
   color: white;
   text-decoration: none;
+  font-family: "daftfont", sans-serif;
 }
 
 .logo {
@@ -25,27 +25,25 @@ header ul a {
   float: right;
 }
 
+@media (max-width: 768px) {
+  header {
+    height: auto;
+  }
+  header ul {
+    flex-direction: column;
+    font-size: x-large;
+    gap: 5px;
+  }
+  header ul a {
+    font-size: 35px;
+  }
+}
 body {
   background-color: black;
 }
 body h2 {
   color: white;
   font-family: "daftfont", sans-serif;
-}
-
-.reproductor {
-  margin: 5%;
-}
-
-.ramdomaccess {
-  color: white;
-  font-size: 21px;
-  line-height: 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin: 8%;
 }
 
 footer {
@@ -63,6 +61,19 @@ footer {
   color: white;
 }
 
+@media (max-width: 768px) {
+  footer {
+    margin: 20px;
+  }
+  footer .redes {
+    display: flex;
+    flex-direction: row;
+  }
+  footer .redes a {
+    margin: 3vh;
+    font-size: 35px;
+  }
+}
 .biografia, .discografia {
   display: flex;
   justify-content: center;
@@ -75,19 +86,23 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
 }
-@media (max-widht: 768px) {
-  .biodaft {
-    display: flex;
-    flex-direction: column;
-    font-size: x-large;
-  }
-}
-.biodaft p {
+
+p {
   color: white;
   font-family: "daftfont", sans-serif;
   margin-left: 20px;
 }
 
+@media (max-width: 768px) {
+  .biodaft {
+    flex-direction: column;
+    font-size: x-large;
+  }
+  .biodaft .imagenbio {
+    width: 100%;
+    margin-top: 4vh;
+  }
+}
 .padre div:hover {
   color: white;
 }
@@ -104,6 +119,7 @@ footer {
 .dejatumensajebox {
   display: flex;
   flex-direction: column;
+  height: 537px;
 }
 .dejatumensajebox .dejatumensaje {
   color: white;
@@ -124,7 +140,7 @@ footer {
   margin-left: 1px;
   font-size: 30px;
   text-align: left;
-  height: 100%;
+  height: 72%;
 }
 .tour2 div:hover {
   transform: translate(100px, 3px);
@@ -140,16 +156,32 @@ footer {
   color: white;
 }
 
+.reproductor {
+  margin: 5%;
+}
+
+.ramdomaccess {
+  color: white;
+  font-size: 21px;
+  line-height: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 8%;
+}
+
 @media (max-width: 768px) {
-  header {
-    display: flex;
+  .banner {
+    height: 100%;
   }
-  header ul {
-    flex-direction: column;
-    font-size: 5vw;
-  }
-  header ul img {
+  .banner .bannerimg {
     width: 100%;
+  }
+  .ramdomaccess {
+    height: 100%;
+    width: 100%;
+    margin-left: 0%;
   }
 }
 
