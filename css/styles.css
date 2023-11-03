@@ -25,7 +25,7 @@ header ul a {
   float: right;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 360px) {
   header {
     height: auto;
   }
@@ -61,7 +61,7 @@ footer {
   color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 360px) {
   footer {
     margin: 20px;
   }
@@ -70,7 +70,7 @@ footer {
     flex-direction: row;
   }
   footer .redes a {
-    margin: 3vh;
+    margin: 0.8px;
     font-size: 35px;
   }
 }
@@ -93,7 +93,7 @@ p {
   margin-left: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 360px) {
   .biodaft {
     flex-direction: column;
     font-size: x-large;
@@ -116,10 +116,39 @@ p {
   gap: 20px;
 }
 
+@media (max-width: 360px) {
+  .padre {
+    display: flex;
+  }
+  .padre .container {
+    flex-direction: column;
+  }
+  .padre .container a:hover {
+    transform: translate(100px, 3px);
+    color: white;
+  }
+  .padre .container a:hover :hover {
+    color: grey;
+    text-decoration: underline;
+  }
+  .padre .container img {
+    width: 100%;
+  }
+  .redes {
+    display: flex;
+  }
+  .redes .container-fluid {
+    flex-direction: row;
+  }
+  .redes .container-fluid a {
+    margin: 0px;
+  }
+}
 .dejatumensajebox {
   display: flex;
   flex-direction: column;
   height: 537px;
+  width: 100%;
 }
 .dejatumensajebox .dejatumensaje {
   color: white;
@@ -156,6 +185,26 @@ p {
   color: white;
 }
 
+@media (max-width: 360px) {
+  h2 {
+    font-size: xx-large;
+    font-family: "daftfont", sans-serif;
+  }
+  .container {
+    display: flex;
+  }
+  .container .tour2 {
+    flex-direction: column;
+  }
+  .container .tour2 div:hover {
+    transform: translate(100px, 3px);
+    color: white;
+  }
+  .container .tour2 div:hover :hover {
+    color: grey;
+    text-decoration: underline;
+  }
+}
 .reproductor {
   margin: 5%;
 }
@@ -171,7 +220,7 @@ p {
   margin: 8%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 360px) {
   .banner {
     height: 100%;
   }

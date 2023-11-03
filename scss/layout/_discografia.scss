@@ -23,5 +23,30 @@
 }
 
 @include mobile() {
-    
+    .padre{
+        display: flex;
+        .container{
+            flex-direction: column;
+            a:hover{
+                transform: translate(100px, 3px);
+                color: white;
+                :hover{
+                    color: grey;
+                    text-decoration: underline;
+                }
+            }
+                img{
+                width: 100%;
+            }
+        }
+    }
+    .redes{
+        display: flex;
+        .container-fluid{
+            flex-direction: row;
+            a{
+                margin:0px;
+            }
+        }
+    }
 }

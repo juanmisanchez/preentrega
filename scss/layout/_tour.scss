@@ -34,4 +34,30 @@
         }
     }     
 
+    @include mobile() {
+        h2{
+           font-size: xx-large; 
+           font-family: $font;
+        }
+        
+        .container{
+            display: flex;
+            .tour2{
+                flex-direction: column;
+                div:hover{
+                    transform: translate(100px, 3px);
+                    color: white;
+                    :hover{
+                        color: grey;
+                        text-decoration: underline;
+                       
+                       
+                    }
+
+            }
+        }
+        }
+        
+        
+        }
     
